@@ -2,8 +2,6 @@
 #include "data.h"
 #include "decl.h"
 
-
-
 static int next(void){
     int c;
 
@@ -83,8 +81,8 @@ int scan(struct token *t){
             break;
         }
 
-    printf("Unrecognised character %c on line %d\n", c, Line);
-    exit(1);
+        printf("Unrecognised character %c on line %d\n", c, Line);
+        exit(1);
     }
 
     return (1);
